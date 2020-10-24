@@ -28,7 +28,7 @@
     <body>
         <?php   
             include('bdd.php');
-            $req ="SELECT * FROM `personne` WHERE `id`=$jojo LIMIT 1";
+            $req ="SELECT * FROM `Personne` WHERE `id`=$jojo LIMIT 1";
         
             $req = $bdd->prepare($req);
             $req->execute();
@@ -73,7 +73,7 @@
                     <div class="w3-col m7">
                         <center><img src="public/img/whogle.png" class="logo" width="50%" alt=""></center>
                         <?php                        
-                        $reqe =" SELECT DISTINCT date FROM `personne` WHERE id=$jojo ORDER BY date ASC LIMIT 1";
+                        $reqe =" SELECT DISTINCT date FROM `Personne` WHERE id=$jojo ORDER BY date ASC LIMIT 1";
                         $reqe = $bdd->prepare($reqe);
                         $reqe->execute();
                         while($dodo = $reqe->fetch()):?>
@@ -83,7 +83,7 @@
                         <?php endwhile ?>
 
                         <?php
-                        $reqes =" SELECT * FROM `personne` WHERE id=$jojo ";
+                        $reqes =" SELECT * FROM `Personne` WHERE id=$jojo ";
                         $reqes = $bdd->prepare($reqes);
                         $reqes->execute();
                         while($dododo = $reqes->fetch()):?>
@@ -100,7 +100,7 @@
 
 
                         <?php
-                        $reqe =" SELECT DISTINCT date FROM `personne` WHERE id=$jojo ORDER BY date DESC LIMIT 1";
+                        $reqe =" SELECT DISTINCT date FROM `Personne` WHERE id=$jojo ORDER BY date DESC LIMIT 1";
                         $reqe = $bdd->prepare($reqe);
                         $reqe->execute();
                         while($dodo = $reqe->fetch()): ?>
@@ -116,7 +116,7 @@
                             <div class="w3-container">
                                 <p>Voir également</p>
                                 <?php
-                                $reqs ="SELECT DISTINCT nom  FROM personne WHERE id=$jojo ";
+                                $reqs ="SELECT DISTINCT nom  FROM Personne WHERE id=$jojo ";
                                 $reqs = $bdd->prepare($reqs);
                                 $reqs->execute();
                                 while($donn = $reqs->fetch()): ?>
