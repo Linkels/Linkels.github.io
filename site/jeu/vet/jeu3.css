@@ -1,0 +1,66 @@
+body {
+
+  margin-left: 15%;
+
+  margin-right: 15%;
+
+  background-image: url('https://thumbs.gfycat.com/CrazyFamousArthropods-size_restricted.gif');
+
+  background-size: cover;
+
+  height: 100vh;
+
+  color: white;
+
+}
+
+
+
+/* Style du bloque de vetement et de Romoit */
+
+#div1, #div2 {
+
+  float: left;
+
+  width: 150px;
+
+  height: 100px;
+
+  margin-top: 100px;
+
+  margin-left: 100px;
+
+  margin-bottom: 100px;
+
+  margin-right: 10px;
+
+  padding: 100px;
+
+}
+
+
+
+/* Bloque de Romoit */
+
+#div2 {
+
+background-image: url(Body.png);
+
+background-repeat:no-repeat;
+
+}
+
+
+
+/* Responsivité des 2 bloques */
+
+@media all and (max-width:1200px) {
+
+  body {
+
+    margin: 0;
+
+  }
+
+}
+

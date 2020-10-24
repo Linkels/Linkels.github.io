@@ -1,0 +1,175 @@
+body {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar */
+#topNav{
+height: 100px;
+width: 100%;
+background-color: red;
+}
+/*Fin Navbar */
+
+/* Lien */
+a:hover{
+  text-decoration: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+/* Fin de lien */
+
+/* Slider */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.trigger {
+  display: none;
+}
+
+.slider, .slider-wrapper {
+  position: relative;
+  height: 250px;
+}
+
+.slide {
+  background-color: black;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 5000;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.slide-img {
+  filter: brightness(50%);
+  height: 100%;
+  object-fit: fill;
+  display: block;
+  margin: 0 auto;
+}
+
+.slide-figure {
+  height: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.slide-caption {
+  position: absolute;
+  bottom: 30%;
+  width: calc(100% - 1rem);
+  color: white;
+  text-align: center;
+  left: 50%;
+}
+
+.trigger:checked + .slide {
+  z-index: 6000;
+  opacity: 1;
+}
+
+.slider-nav {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.slider-nav__item {
+  display: inline-block;
+}
+
+.slider-nav__label {
+  font-size: 13px;
+  background-color: red;
+  display: block;
+  height: 2em;
+  line-height: 2em;
+  width: 2em;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  transition: background-color .25s, color .25s ease-in-out;
+}
+
+.slider-nav__label:hover,
+.slider-nav__label:active,
+.slider-nav__label:focus {
+  background-color: gray;
+  color: black;
+}
+
+@media only screen and (min-width: 1024px) {
+  .slider, .slider-wrapper {
+    height: 480px;
+  }
+
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .slider, .slider-wrapper {
+    height: 360px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .slide-img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* Fin du slider */
+
+/* Div Barbecue, sert à alligner le texte */
+#Barbecue {
+  display: flex;
+  justify-content: space-around;
+}
+/* Fin de div Barbecue */
+
+/* Footer */
+.galerie {
+    width : 600px;
+}
+.boîte {
+    float : left;
+    margin : 10px 0 10px 10px;
+    padding : 5px;
+    width : 100px;
+    text-align : center;
+}
+.clear {
+    clear : both;
+    visibility : hidden;
+}
+
+#footer {
+  margin-top: auto;
+  background: black;
+  color: white;
+  padding: 5px;
+}
+
+
+.foot {
+  text-align: center;
+}
+/* Fin du footer */

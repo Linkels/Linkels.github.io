@@ -1,0 +1,75 @@
+[23-Sep-2019 11:06:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pass' in 'field list' in /home/lywppkon/public_html/site/devcord/controller/serv_login.php:12
+Stack trace:
+#0 /home/lywppkon/public_html/site/devcord/controller/serv_login.php(12): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/lywppkon/public_html/site/devcord/controller/serv_login.php on line 12
+[23-Sep-2019 11:09:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pass' in 'field list' in /home/lywppkon/public_html/site/devcord/controller/serv_login.php:12
+Stack trace:
+#0 /home/lywppkon/public_html/site/devcord/controller/serv_login.php(12): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/lywppkon/public_html/site/devcord/controller/serv_login.php on line 12
+[23-Sep-2019 11:23:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pass' in 'field list' in /home/lywppkon/public_html/site/devcord/controller/serv_login.php:12
+Stack trace:
+#0 /home/lywppkon/public_html/site/devcord/controller/serv_login.php(12): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/lywppkon/public_html/site/devcord/controller/serv_login.php on line 12
+[23-Sep-2019 11:23:53 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pass' in 'field list' in /home/lywppkon/public_html/site/devcord/controller/serv_register.php:18
+Stack trace:
+#0 /home/lywppkon/public_html/site/devcord/controller/serv_register.php(18): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/lywppkon/public_html/site/devcord/controller/serv_register.php on line 18
+[23-Sep-2019 11:26:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pass' in 'field list' in /home/lywppkon/public_html/site/devcord/controller/serv_register.php:18
+Stack trace:
+#0 /home/lywppkon/public_html/site/devcord/controller/serv_register.php(18): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/lywppkon/public_html/site/devcord/controller/serv_register.php on line 18
+[23-Sep-2019 11:34:39 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pass' in 'field list' in /home/lywppkon/public_html/site/devcord/controller/serv_register.php:18
+Stack trace:
+#0 /home/lywppkon/public_html/site/devcord/controller/serv_register.php(18): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/lywppkon/public_html/site/devcord/controller/serv_register.php on line 18
+[23-Sep-2019 11:35:20 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pass' in 'field list' in /home/lywppkon/public_html/site/devcord/controller/serv_login.php:12
+Stack trace:
+#0 /home/lywppkon/public_html/site/devcord/controller/serv_login.php(12): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/lywppkon/public_html/site/devcord/controller/serv_login.php on line 12
+[23-Sep-2019 11:37:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pass' in 'field list' in /home/lywppkon/public_html/site/devcord/controller/serv_login.php:12
+Stack trace:
+#0 /home/lywppkon/public_html/site/devcord/controller/serv_login.php(12): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/lywppkon/public_html/site/devcord/controller/serv_login.php on line 12
+[23-Sep-2019 11:40:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pass' in 'field list' in /home/lywppkon/public_html/site/devcord/controller/serv_register.php:18
+Stack trace:
+#0 /home/lywppkon/public_html/site/devcord/controller/serv_register.php(18): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/lywppkon/public_html/site/devcord/controller/serv_register.php on line 18
+[23-Sep-2019 11:44:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pass' in 'field list' in /home/lywppkon/public_html/site/devcord/controller/serv_login.php:12
+Stack trace:
+#0 /home/lywppkon/public_html/site/devcord/controller/serv_login.php(12): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/lywppkon/public_html/site/devcord/controller/serv_login.php on line 12
+[23-Sep-2019 11:45:06 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pass' in 'field list' in /home/lywppkon/public_html/site/devcord/controller/serv_register.php:18
+Stack trace:
+#0 /home/lywppkon/public_html/site/devcord/controller/serv_register.php(18): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/lywppkon/public_html/site/devcord/controller/serv_register.php on line 18
+[23-Sep-2019 14:39:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pass' in 'field list' in /home/lywppkon/public_html/site/devcord/controller/serv_register.php:18
+Stack trace:
+#0 /home/lywppkon/public_html/site/devcord/controller/serv_register.php(18): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/lywppkon/public_html/site/devcord/controller/serv_register.php on line 18
+[24-Sep-2019 07:21:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pass' in 'field list' in /home/lywppkon/public_html/site/devcord/controller/serv_register.php:18
+Stack trace:
+#0 /home/lywppkon/public_html/site/devcord/controller/serv_register.php(18): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/lywppkon/public_html/site/devcord/controller/serv_register.php on line 18
+[24-Sep-2019 10:43:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pass' in 'field list' in /home/lywppkon/public_html/site/devcord/controller/serv_register.php:18
+Stack trace:
+#0 /home/lywppkon/public_html/site/devcord/controller/serv_register.php(18): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/lywppkon/public_html/site/devcord/controller/serv_register.php on line 18
+[24-Sep-2019 12:54:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'description_article' in 'field list' in /home/lywppkon/public_html/site/devcord/controller/article.php:16
+Stack trace:
+#0 /home/lywppkon/public_html/site/devcord/controller/article.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/lywppkon/public_html/site/devcord/controller/article.php on line 16

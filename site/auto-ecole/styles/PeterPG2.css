@@ -1,0 +1,43 @@
+body{
+
+    background-color: rgba(3, 2, 20, 0.966);
+
+}
+
+
+
+
+.Diap1 {
+
+    margin-left: 10%;
+    margin-top: 220px;
+    width: 800px;
+    height: 500px;
+    border: 7px solid#333;
+    background-image: url("PeterImagePG2-css/photo1.jpg");
+
+    -webkit-animation-name: diapo1;
+    -webkit-animation-duration: 9s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+
+    moz-animation-name: diapo1;
+    moz-animation-duration: 9s;
+    moz-animation-timing-function: linear;
+    moz-animation-iteration-count: infinite;
+    moz-animation-direction: normal;
+
+    animation-name: diapo1;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+}
+
+@-webkit-keyframes diapo1{
+    0%{background-image: url("PeterImagePG2-css/photo1.jpg");}
+    32%{background-image: url("PeterImagePG2-css/photo2.jpg");}
+    67%{background-image: url("PeterImagePG2-css/photo3.jpg");}
+}

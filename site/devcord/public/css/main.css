@@ -1,0 +1,544 @@
+body {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1D1D1D;
+  color: white;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: cyan;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* classe DV */
+ 
+.dv-ofh-x {
+  overflow-x: hidden;
+}
+
+/* fin de DV */
+
+/* couleur du header et du footer */
+.header, .dv-color-grad, footer {
+  background: linear-gradient(-45deg, #000, rgb(90, 112, 190));
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+footer {
+  margin-top: auto;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer hr {
+  background-color: white;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+/* fin de la couleur */
+
+
+/* Card avec menu */
+.card-deck {
+  padding: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.card {
+    background-color: transparent;
+}
+/* fin des cards avec menu */
+
+/* paralax */
+.parallax-element {
+  background: transparent;
+  padding: 10%;
+  display: block !important;
+ }
+ /* fin de la paralax */
+
+/* CIRCLE BAR */
+.circular-menu {
+  z-index: 1000;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
+
+
+.circular-menu .floating-btn {
+  display: block;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  background-color: #771818;
+  box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, .26);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  line-height: 3.9;
+  cursor: pointer;
+  outline: 0;
+}
+
+.circular-menu.active .floating-btn {
+  box-shadow: inset 0 0 3px hsla(0, 0%, 0%, .3);
+}
+
+.circular-menu .floating-btn:active {
+  box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, .4);
+}
+
+.circular-menu .floating-btn i {
+  font-size: 1.3em;
+  transition: transform .2s;
+}
+
+.circular-menu.active .floating-btn i {
+  transform: rotate(-45deg);
+}
+
+.circular-menu:after {
+  display: block;
+  content: ' ';
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+  background-color: #771818;
+  transition: all .3s ease;
+}
+
+.circular-menu.active:after {
+  transform: scale3d(5.5, 5.5, 1);
+  transition-timing-function: cubic-bezier(.68, 1.55, .265, 1);
+}
+
+.circular-menu .items-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.circular-menu .menu-item {
+  position: absolute;
+  top: .2em;
+  right: .2em;
+  z-index: -1;
+  display: block;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 1em;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3;
+  background-color: hsla(0,0%,0%,.1);
+  transition: transform .3s ease, background .2s ease;
+}
+
+.circular-menu .menu-item:hover {
+  background-color: hsla(0,0%,0%,.3);
+}
+
+.circular-menu.active .menu-item {
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.circular-menu.active .menu-item:nth-child(1) {
+  transform: translate3d(1em,-7em,0);
+}
+
+.circular-menu.active .menu-item:nth-child(2) {
+  transform: translate3d(-3.5em,-6.3em,0);
+}
+
+.circular-menu.active .menu-item:nth-child(3) {
+  transform: translate3d(-6.5em,-3.2em,0);
+}
+
+.circular-menu.active .menu-item:nth-child(4) {
+  transform: translate3d(-7em,1em,0);
+}
+
+/**
+ * The other theme for this menu
+ */
+
+.circular-menu.circular-menu-left {
+  right: auto;
+  left: 1em;
+}
+
+.circular-menu.circular-menu-left .floating-btn {
+  background-color: #0B2B84;
+}
+
+.circular-menu.circular-menu-left:after {
+  background-color: #0B2B84;
+}
+
+.circular-menu.circular-menu-left.active .floating-btn i {
+  transform: rotate(90deg);
+}
+
+.circular-menu.circular-menu-left.active .menu-item:nth-child(1) {
+  transform: translate3d(-1em,-7em,0);
+}
+
+.circular-menu.circular-menu-left.active .menu-item:nth-child(2) {
+  transform: translate3d(3.5em,-6.3em,0);
+}
+
+.circular-menu.circular-menu-left.active .menu-item:nth-child(3) {
+  transform: translate3d(6.5em,-3.2em,0);
+}
+
+.circular-menu.circular-menu-left.active .menu-item:nth-child(4) {
+  transform: translate3d(7em,1em,0);
+}
+/* fin de la circle barre */
+
+/* article index */
+.dc-article {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.dc-article hr {
+  background-color: white;
+  width: 50%;
+}
+
+/* fin article index */
+
+/* page article */
+.media {
+  border: solid #fff;
+  margin-right :20px;
+  margin-left: 20px;
+}
+.media img {
+ width: 10%;
+}
+
+.comment-center {
+  margin-left: 30%;
+}
+
+.comment-wrapper .media-list .media img {
+    width:64px;
+    height:64px;
+    border:2px solid #e5e7e8;
+}
+
+.comment-wrapper .media-list .media {
+    border-bottom:1px dashed #efefef;
+    margin-bottom:25px;
+}
+
+.media-body {
+  margin-left: 10px;
+}
+/* fin de page article */
+
+
+/* para element */
+#wrapper {
+  overflow: hidden;
+}
+
+#menu,#menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+  position: relative;
+}
+
+#menu {
+  left: 50%;
+}
+
+#menu li {
+  right: 50%;
+}
+
+.button a {
+display:block;
+width:200px;
+line-height:50px;
+text-align:center;
+color: #fff;
+text-decoration:none;
+font-size: 15px;
+}
+
+.button a:hover {
+color: #000;
+}
+
+.paracontent {
+  margin-right: 10%;
+}
+
+.dv-para-space {
+  margin: 1%;
+}
+
+@media all and (max-width:500px) {
+  #parellement {
+    margin-left: 15%;
+  }
+}
+/* fin de paralement */
+
+/* Les packs */
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+  margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.pricing .card-price .period {
+  font-size: 0.8rem;
+}
+
+.pricing ul li {
+  margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+  opacity: 0.7;
+}
+
+.pricing .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  .pricing .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+  .pricing .card:hover .btn {
+    opacity: 1;
+  }
+}
+
+/* Fin des packs */
+
+/* discord login */
+.auth-wrap-background {
+  background-size: cover;
+  background-position: 50%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.auth-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.auth-blur {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  overflow: hidden;
+}
+
+.auth-size {
+  max-height: 440px;
+  max-width: 780px;
+  height: 440px;
+  width: 100%;
+}
+
+.auth__inner {
+  display: flex;
+  overflow: hidden;
+}
+
+.auth__inner__section {
+  padding: 1.25rem 2rem;
+}
+
+.auth__sidebar {
+  flex: 40%;
+}
+
+.auth__form {
+  background: rgba(34, 37, 42, 0.8);
+  flex: 45%;
+}
+
+.form__title {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.125rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  padding: 0 0 1rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form__label {
+  padding-bottom: 1.25rem;
+  display: block;
+}
+
+.form__label__text {
+  color: #87909c;
+  font-weight: 700;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+}
+
+.form__input {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 0;
+  border-bottom: 2px solid transparent;
+  display: block;
+  outline: 0;
+  position: relative;
+  padding: 10px 0px;
+  width: 100%;
+}
+.form__input:focus {
+  border-color: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.form__input-border {
+  border-bottom: 1px solid #87909c;
+  display: block;
+}
+
+.button {
+  background: #697ec4;
+  border-radius: 3px;
+  border: 0;
+  color: #fff;
+  display: block;
+  line-height: 60px;
+  margin-top: 70px;
+  outline: 0;
+  width: 100%;
+}
+
+.form__meta {
+  font-size: 0.6875rem;
+  padding: 10px 0;
+}
+
+/* fin de discord login */
+
+

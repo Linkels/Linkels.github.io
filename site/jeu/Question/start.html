@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <style> body {background-image: url(star.gif); background-size: cover; color: white; padding-top: 120px;} </style>
+    <script>
+        function valider() {
+        /* Alerte pour réponse Jul */
+        if (document.getElementById("faux").checked) alert("C'est faux, t'es nul !");
+        /* Alerte pour réponse Américain */
+        else if (document.getElementById("pourquoipas").checked) alert("Ca aurais pu être vrai");
+        /* Réponse pour BADASS */
+        else if (document.getElementById("BADASS").checked) alert("OUAAAAAH GG !!!!");
+        /* En cas de non réponse */
+        else alert("Bah répond, t'es pas très futé(e) toi hein ?");
+      }
+    </script>
+  </head>
+  <center>
+    <body>
+      <!-- La question -->
+      <p>Q1) Comment trouves tu le fond du site ? :</p>
+      <!-- La réponse Jul -->
+      <p><input type="radio" name="Q1" id="faux">Aussi bon que du Jul<br>
+        <!-- La réponse Américain -->
+        <input type="radio" name="Q1" id="pourquoipas">Américain ?<br>
+        <!-- La réponse badass -->
+        <input type="radio" name="Q1" id="BADASS">Bah badass bien sur !</p>
+        <!-- Page question suivante -->
+        <p><input type="button" value="OK" onclick="valider();"></p><input type="button" onclick='document.location.href="start2.html"' value="Tu veux vraiment continuer ?";/><br><br>
+        <!-- Retour menu du jeu -->
+        <input type="button" onclick='document.location.href="/jeu/index.html"' value="RETOUR CHOIX"/></center>
+      </body>
+      </html>

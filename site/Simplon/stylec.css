@@ -1,0 +1,39 @@
+.ee{
+  font-size: 35px;
+}
+
+header{
+  background-color: black;
+}
+
+.logo{
+  margin-top: 12px;
+  margin-left: -100px;
+  margin-bottom: 12px;
+}
+
+.cm{
+  margin-top: 35px;
+  margin-left: -80px;
+}
+
+li{
+  display: inline;
+  margin-left: 45px;
+}
+
+ul {
+  margin-top: 40px;
+  margin-left: 100px;
+  width: 100%,
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+a:hover{
+  color: #ed1450;
+}
